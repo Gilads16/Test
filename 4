@@ -1,0 +1,40 @@
+# Test
+
+
+namespace Targil4
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Please Enter a number between 1-15");
+			int stars = Convert.ToInt32(Console.ReadLine()); 
+			
+			
+				int i = 1; 
+				int spaces = stars / 2; 
+				while (i <= stars)
+				{
+					
+					for (int j = 1; j <= spaces; j++)
+					{
+						Console.Write(' ');
+					}
+					
+					for (int j = 1; j <= i; j++)
+					{
+						Console.Write('*');
+					}
+					Console.WriteLine();
+					
+					i = i + 2;
+					
+					spaces = spaces - 1;
+				}
+			
+			
+
+			
+		}
+	}
+}

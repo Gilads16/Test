@@ -1,0 +1,43 @@
+namespace ConsoleApp3
+{
+	class Program1
+	{
+		static void Main(string[] args)
+		{
+
+			Console.WriteLine("Please Enter A number Between 0-1000");
+
+			int x1, m1;
+			int sum = 0;
+
+			do
+			{
+
+				
+				m1 = 2;
+				x1 = Convert.ToInt32(Console.ReadLine());
+				while (x1 % m1 != 0 && m1 < x1)
+				{
+					m1++;
+				}
+				if (x1 == m1)
+				{
+					Console.WriteLine("This Is Prime!");
+					sum = sum + x1;
+					Console.Write("your sum is ");
+					Console.WriteLine(sum);
+				}
+				else
+				{
+					Console.WriteLine("This Is NOT Prime!");
+				}
+				// ===========================================================================
+
+			}
+			while (x1 == m1);
+
+			
+
+		}
+	}
+}

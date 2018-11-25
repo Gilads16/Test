@@ -1,0 +1,42 @@
+# Test
+
+namespace ConsoleApp1
+{
+	class Program2
+	{
+		static void Main(string[] args)
+		{
+			int SecondsTotal = Convert.ToInt32(Console.ReadLine());
+				if (SecondsTotal >= 86400)
+				{
+					int Days = SecondsTotal / 86400;
+					SecondsTotal = SecondsTotal - Days * 86400;
+					Console.Write("Days x ");
+					Console.WriteLine(Days);
+				}
+				if (SecondsTotal >= 3600)
+				{
+					int Hours = SecondsTotal / 3600;
+					SecondsTotal = SecondsTotal - Hours * 3600;
+					Console.Write("Hours x ");
+					Console.WriteLine(Hours);
+				}
+				if (SecondsTotal >= 60)
+				{
+					int Minutes = SecondsTotal / 60;
+					SecondsTotal = SecondsTotal - Minutes * 60;
+					Console.Write("Minutes x ");
+					Console.WriteLine(Minutes);
+				}
+				if (SecondsTotal >= 1)
+				{
+					int Seconds = SecondsTotal / 1;
+					SecondsTotal = SecondsTotal - Seconds * 1;
+					Console.Write("Seconds x ");
+					Console.WriteLine(Seconds);
+				}
+			}
+		}
+			
+		}
+	
